@@ -1,0 +1,28 @@
+ {
+  "manifest_version": 2,
+  "name": "ads_deleter",
+  "version": "1.0",
+
+  "icons": {
+    "128": "imgs/ico.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "*://vk.com/*" ],
+      "js": [ "jquery.js", "background.js" ],
+	  "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+    "injected.js"
+  ],
+      "browser_action": {
+        "default_title": "ads_deleter",
+        "default_icon": "imgs/ico.png",
+        "default_popup": "popup.html"
+    }
+
+}
