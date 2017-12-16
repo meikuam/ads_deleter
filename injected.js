@@ -3,14 +3,14 @@ function injected_main() {
     var geekEl = document.getElementsByClassName("wall_marked_as_ads");
     if(geekEl != null) {
         for (i = 0; i < geekEl.length; i++) {
-            var parentOfgeekEl = geekEl[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+            var parentOfgeekEl = geekEl[i].parentNode.parentNode.parentNode.parentNode.parentNode;
             parentOfgeekEl.remove();
         }
     }
     var promEl = document.getElementsByClassName("wall_text_name_explain_promoted_post");
     if(promEl != null) {
         for (i = 0; i < promEl.length; i++) {
-            var parentOfpromEl = promEl[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+            var parentOfpromEl = promEl[i].parentNode.parentNode.parentNode.parentNode.parentNode;
             parentOfpromEl.remove();
         }
     }
